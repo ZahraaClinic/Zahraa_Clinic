@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR/Zahra Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style/clinicmulti.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-5">
+                    <p data-en="Welcome to a Professional Woman Health Care Clinic" data-ar="مرحبًا بكم في عيادة الرعاية الصحية المتخصصة للنساء">Welcome to a Professional Woman Health Care Clinic</p>
+                </div>
+                <div class="details col-md-8 col-sm-7 text-md-end">
+                    <span class="me-3"><i class="fa-solid fa-phone"></i> 01553664556</span>
+                    <span class="me-3"><i class="fa-solid fa-calendar-days"></i> <span data-en="02:00 PM - 05:00 PM (Daily)" data-ar="02:00 م - 05:00 م (يوميًا)">02:00 PM - 05:00 PM (Daily)</span></span>
+                    <button id="lang-switch" class="btn btn-sm ">العربية</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="clinic.html"><img src="Media/logo-removebg-preview.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#top" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctor-section" data-en="Doctor" data-ar="الطبيبة">Doctor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news" data-en="News" data-ar="الأخبار">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#google-map" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Home-->
+<section id="home" class="slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active item-first">
+                        <div class="caption text-center">
+                            <div class=" words offset-md-1 col-md-10">
+                                <h3 data-en="Providing Comprehensive Care for Women" data-ar="توفير رعاية متكاملة ومتميزة للنساء">Providing Comprehensive Care for Women</h3>
+                                <h1 data-en="Your Health, Our Priority" data-ar="صحتك هي أولويتنا">Your Health, Our Priority</h1>
+                                <a href="#doctor-section" class="btn banner-btn" data-en="Meet Our Doctor" data-ar="تعرف على الطبيبة">Meet Our Doctor</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-second">
+                        <div class="caption text-center">
+                            <div class="words offset-md-1 col-md-10">
+                                <h3 data-en="Dedicated to Women's Wellness" data-ar="مكرسون لصحة المرأة">Dedicated to Women's Wellness</h3>
+                                <h1 data-en="Empowering Healthy Lives" data-ar="رعاية متكاملة لصحة الأم والجنين">Empowering Healthy Lives</h1>
+                                <a href="#about" class="btn banner-btn" data-en="More About Us" data-ar="المزيد عنا">More About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item item-third">
+                        <div class="words caption text-center">
+                            <div class="offset-md-1 col-md-10">
+                                <h3 data-en="Expert Care for Every Stage of Life" data-ar="رعاية متخصصة لكل مرحلة من مراحل الحياة">Expert Care for Every Stage of Life</h3>
+                                <h1 data-en="Compassionate & Personalized Treatment" data-ar="عناية لطيفة ومخصصة للمرأة">Compassionate & Personalized Treatment</h1>
+                                <a href="#news" class="btn banner-btn" data-en="News" data-ar="الأخبار">News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About Us-->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="about-info">
+                    <h2 class="wow animate__animated animate__fadeInUp" id="fadeElement" data-wow-delay="0.6s" data-en="Welcome to our clinic for Women's Health Care" data-ar="مرحبًا بكم في عيادتنا لرعاية صحة المرأة">Welcome to our clinic for Women's Health Care</h2>
+                    <div class="wow animate__animated animate__fadeInUp" id="fadeText" data-wow-delay="0.8s">
+                        <p class="ms-3" data-en="A women's and obstetrics clinic is dedicated to providing exceptional healthcare 
+                        services tailored to women's needs. The clinic specializes in advanced fertility treatments, 
+                        including IVF (In Vitro Fertilization) and plasma injections, to support women facing fertility challenges. 
+                        It also offers pain-free delivery options to ensure a comfortable and safe childbirth experience. 
+                        Committed to the highest standards of hygiene and care, the clinic prioritizes sterilization and patient comfort, 
+                        creating a safe and reassuring environment for every woman. With expert medical professionals and state-of-the-art 
+                        technology, the clinic strives to provide compassionate and effective care, ensuring the well-being of women 
+                        at every stage of their journey." 
+                        data-ar="تكرس عيادتنا لصحة المرأة وتقديم خدمات رعاية صحية متميزة تلبي احتياجات النساء.
+                        تتخصص العيادة في علاجات الخصوبة المتقدمة، بما في ذلك التلقيح الصناعي (IVF) 
+                        وحقن البلازما، لدعم النساء اللاتي يواجهن تحديات الخصوبة. كما توفر خيارات ولادة بدون
+                        ألم لضمان تجربة ولادة مريحة وآمنة.
+                        نحن ملتزمون بأعلى معايير النظافة والرعاية، حيث نولي أهمية كبيرة للتعقيم وراحة المريضات، مما يخلق بيئة آمنة ومطمئنة لكل امرأة.
+                        بفضل فريقنا الطبي المتخصص والتكنولوجيا الحديثة، نسعى لتقديم رعاية رحيمة وفعالة لضمان صحة المرأة في جميع مراحل حياتها.">"A women's and obstetrics clinic is dedicated to providing exceptional healthcare 
+                        services tailored to women's needs. The clinic specializes in advanced fertility treatments, 
+                        including IVF (In Vitro Fertilization) and plasma injections, to support women facing fertility challenges. 
+                        It also offers pain-free delivery options to ensure a comfortable and safe childbirth experience. 
+                        Committed to the highest standards of hygiene and care, the clinic prioritizes sterilization and patient comfort, 
+                        creating a safe and reassuring environment for every woman. With expert medical professionals and state-of-the-art 
+                        technology, the clinic strives to provide compassionate and effective care, ensuring the well-being of women 
+                        at every stage of their journey." </p>
+                    </div>
+                    <figure class="profile wow animate__animated animate__fadeInUp ms-2" id="fadeFigure" data-wow-delay="1s">
+                        <img src="/Media/logo.png" class="img-fluid" alt="logo">
+                        <figcaption>
+                            <h6 data-en="Dr. Zahra Ragheb" data-ar="الدكتورة الزهراء اسماعيل راغب">Dr. Zahra Ragheb</h6>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container my-5" id="doctor-section">
+    <div class="text-center mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+        <h1 class="fw-bold" data-en="Meet Our Doctor" data-ar="تعرف على طبيبتنا">Meet Our Doctor</h1>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+            <h3 class="fw-bold" data-en="Dr. Zahraa Ismail Ragheb" data-ar="الدكتورة الزهراء إسماعيل راغب">Dr. Zahraa Ismail Ragheb</h3>
+            <ul>
+                <li data-en="Lecturer and Consultant in Obstetrics, Gynecology, and Infertility at the Faculty of Medicine" data-ar="محاضرة ومستشارة في طب النساء والتوليد والعقم في كلية الطب">Lecturer and Consultant in Obstetrics, Gynecology, and Infertility at the Faculty of Medicine</li>
+                <li data-en="Specialist in Obstetrics and Gynecology" data-ar="متخصصة في طب النساء والتوليد">Specialist in Obstetrics and Gynecology</li>
+                <li data-en="Master's Degree in Obstetrics and Gynecology" data-ar="حاصلة على درجة الماجستير في طب النساء والتوليد">Master's Degree in Obstetrics and Gynecology</li>
+                <li data-en="Fellow of the Royal College in England" data-ar="زميلة الكلية الملكية في إنجلترا">Fellow of the Royal College in England</li>
+                <li data-en="Consultant in IVF (In Vitro Fertilization)" data-ar="استشارية في التلقيح الصناعي">Consultant in IVF (In Vitro Fertilization)</li>
+                <li data-en="Consultant in Female Aesthetic Medicine" data-ar="استشارية في الطب التجميلي النسائي">Consultant in Female Aesthetic Medicine</li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.7s">
+            <img src="Media/pregnency.jpg" alt="Pregnant Woman" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+<!--News Section-->
+<section id="news" class="container my-5">
+    <div class="text-center mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+        <h1 class="fw-bold" data-en="Latest News" data-ar="أحدث الأخبار">Latest News</h1>
+    </div>
+
+    <div class="row">
+        <!-- News Item 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+            <div class="news-thumb card border-0 shadow-sm">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#newsModal1">
+                    <img src="Media/photo3.jpg" class="card-img-top rounded" alt="">
+                </a>
+                <div class="card-body">
+                    <h3 class="mt-2">
+                        <a href="#" class="head text-decoration-none" data-bs-toggle="modal" data-bs-target="#newsModal1" data-en="Tips for Pregnant Women in the First Months" data-ar="نصائح للحوامل في الأشهر الأولى">Tips for Pregnant Women in the First Months</a>
+                    </h3>
+                    <p class="news-text" data-en="A pregnant woman can try some other habits to reduce nausea." data-ar="يمكن للمرأة الحامل تجربة بعض العادات لتقليل الغثيان.">A pregnant woman can try some other habits to reduce nausea.</p>
+                    <button class="btn btn1 btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal1" data-en="Read More" data-ar="اقرأ المزيد">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 2 -->
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+            <div class="news-thumb card border-0 shadow-sm">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#newsModal2">
+                    <img src="Media/photo2 (1).jpg" class="card-img-top rounded" alt="">
+                </a>
+                <div class="card-body">
+                    <h3 class="mt-2">
+                        <a href="#" class="head text-decoration-none" data-bs-toggle="modal" data-bs-target="#newsModal2" data-en="PRP Injections Are Not Just for Skin and Hair!" data-ar="البلازما ليست للبشرةوالشعرفقط!">PRP Injections Are Not Just for Skin and Hair!</a>
+                    </h3>
+                    <p class="news-text" data-en="PRP (Platelet-Rich Plasma) is now being used in cosmetic gynecology for treatment." data-ar="استخدام حقن البلازما في طب التجميل النسائي للعلاج.">PRP (Platelet-Rich Plasma) is now being used in cosmetic gynecology for treatment.</p>
+                    <button class="btn btn1 btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal2" data-en="Read More" data-ar="اقرأ المزيد">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Item 3 -->
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+            <div class="news-thumb card border-0 shadow-sm">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#newsModal3">
+                    <img src="Media/photo2 (2).jpg" class="card-img-top rounded" alt="">
+                </a>
+                <div class="card-body">
+                    <h3 class="mt-2">
+                        <a href="#" class="head text-decoration-none" data-bs-toggle="modal" data-bs-target="#newsModal3" data-en="Symptoms of Low Ovarian Reserve" data-ar="أعراض انخفاض مخزون المبيض">Symptoms of Low Ovarian Reserve</a>
+                    </h3>
+                    <p class="news-text" data-en="There are no clear symptoms indicating a decrease in ovarian reserve." data-ar="لا توجد أعراض واضحة تشير إلى انخفاض مخزون المبيض.">There are no clear symptoms indicating a decrease in ovarian reserve.</p>
+                    <button class="btn btn1 btn-sm" data-bs-toggle="modal" data-bs-target="#newsModal3" data-en="Read More" data-ar="اقرأ المزيد">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- News Modals -->
+    <div class="modal fade" id="newsModal1" tabindex="-1" aria-labelledby="newsModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal1Label" data-en="Tips for Pregnant Women in the First Months" data-ar="نصائح للحوامل في الأشهر الأولى">Tips for Pregnant Women in the First Months</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Media/photo3.jpg" class="img-fluid mb-3" alt="">
+                    <p data-en="Morning sickness is one of the most annoying symptoms for women at the beginning of pregnancy. Some women experience nausea and vomiting throughout the first months of pregnancy, which can be extremely bothersome. Although it can be difficult to control this type of nausea, doctors recommend certain tips for pregnant women in early pregnancy to help reduce morning sickness. Some of the most important tips include:" data-ar="الغثيان الصباحي هو أحد أكثر الأعراض إزعاجًا للنساء في بداية الحمل. تعاني بعض النساء من الغثيان والقيء خلال الأشهر الأولى من الحمل، مما قد يكون مزعجًا للغاية. على الرغم من صعوبة التحكم في هذا النوع من الغثيان، يوصي الأطباء ببعض النصائح للحوامل في بداية الحمل للمساعدة في تقليل الغثيان الصباحي. ومن أهم هذه النصائح:">
+                    Morning sickness is one of the most annoying symptoms for women at the beginning of pregnancy. Some women experience nausea and vomiting throughout the first months of pregnancy, which can be extremely bothersome.
+                    </p>
+                    <ul class="modal-list">
+                        <li data-en="Avoid using creams and perfumes with strong scents." data-ar="تجنب استخدام الكريمات والعطور ذات الروائح القوية.">Avoid using creams and perfumes with strong scents.</li>
+                        <li data-en="Do not sleep on an empty stomach; eat a piece of fruit or drink a glass of milk before bedtime." data-ar="لا تنامي على معدة فارغة؛ تناولي قطعة من الفاكهة أو كوبًا من الحليب قبل النوم.">Do not sleep on an empty stomach; eat a piece of fruit or drink a glass of milk before bedtime.</li>
+                        <li data-en="Do not move immediately after waking up; rest for a while, drink a glass of juice, and then start moving." data-ar="لا تتحركي فور الاستيقاظ؛ استريحي قليلًا، اشربي كوبًا من العصير، ثم ابدئي بالحركة.">Do not move immediately after waking up; rest for a while, drink a glass of juice, and then start moving.</li>
+                        <li data-en="Avoid eating fried and fatty foods for dinner. Instead, opt for a light and healthy meal consisting of yogurt, fruit, and a glass of juice." data-ar="تجنبي تناول الأطعمة المقلية والدهنية في العشاء. بدلًا من ذلك، اختاري وجبة خفيفة وصحية تتكون من الزبادي، الفاكهة، وكوب من العصير.">Avoid eating fried and fatty foods for dinner. Instead, opt for a light and healthy meal consisting of yogurt, fruit, and a glass of juice.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="newsModal2" tabindex="-1" aria-labelledby="newsModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal2Label" data-en="PRP Injections Are Not Just for Skin and Hair!" data-ar="حقن البلازما ليست فقط للبشرة والشعر!">PRP Injections Are Not Just for Skin and Hair!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Media/photo2 (1).jpg" class="img-fluid mb-3" alt="">
+                    <p data-en="PRP (Platelet-Rich Plasma) is now being used in cosmetic gynecology for the treatment of:" data-ar="يتم الآن استخدام حقن البلازما الغنية بالصفائح الدموية (PRP) في طب التجميل النسائي لعلاج:">
+                    PRP (Platelet-Rich Plasma) is now being used in cosmetic gynecology for the treatment of:</p>
+                    <ul class="modal-list">
+                        <li data-en="Mild vaginal laxity" data-ar="ارتخاء مهبلي خفيف">Mild vaginal laxity</li>
+                        <li data-en="Early stages of urinary incontinence" data-ar="المراحل المبكرة من سلس البول">Early stages of urinary incontinence</li>
+                        <li data-en="Vaginal dryness and recurrent infections" data-ar="جفاف المهبل والالتهابات المتكررة">Vaginal dryness and recurrent infections</li>
+                        <li data-en="Low sexual arousal in women by injecting PRP into specific areas that enhance nerve signal transmission to the brain" data-ar="ضعف الإثارة الجنسية لدى النساء من خلال حقن البلازما في مناطق معينة تعزز نقل الإشارات العصبية إلى الدماغ">Low sexual arousal in women by injecting PRP into specific areas that enhance nerve signal transmission to the brain</li>
+                        <li data-en="Brightening and rejuvenation of the intimate area" data-ar="تفتيح وتجديد المنطقة الحساسة">Brightening and rejuvenation of the intimate area</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newsModal3" tabindex="-1" aria-labelledby="newsModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsModal3Label" data-en="Symptoms of Low Ovarian Reserve" data-ar="أعراض انخفاض مخزون المبيض">Symptoms of Low Ovarian Reserve</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="Media/photo2 (2).jpg" class="img-fluid mb-3" alt="">
+                    <p data-en="There are no clear symptoms indicating a decrease in ovarian reserve. However, some symptoms may appear in women experiencing this condition, such as:" data-ar="لا توجد أعراض واضحة تشير إلى انخفاض مخزون المبيض. ومع ذلك، قد تظهر بعض الأعراض لدى النساء اللاتي يعانين من هذه الحالة، مثل:">
+                    There are no clear symptoms indicating a decrease in ovarian reserve. However, some symptoms may appear in women experiencing this condition, such as:</p>
+                    <ul class="modal-list">
+                        <li data-en="Difficulty getting pregnant." data-ar="صعوبة في الحمل.">Difficulty getting pregnant.</li>
+                        <li data-en="Missed or delayed menstrual periods." data-ar="غياب أو تأخر الدورة الشهرية.">Missed or delayed menstrual periods.</li>
+                        <li data-en="Shorter menstrual cycles (less than the normal average for a 28-year-old woman)." data-ar="دورات شهرية أقصر من المعتاد (أقل من المتوسط الطبيعي للمرأة البالغة من العمر 28 عامًا).">Shorter menstrual cycles (less than the normal average for a 28-year-old woman).</li>
+                        <li data-en="Heavy menstrual bleeding." data-ar="نزيف حاد أثناء الدورة الشهرية.">Heavy menstrual bleeding.</li>
+                        <li data-en="Miscarriage." data-ar="الإجهاض.">Miscarriage.</li>
+                    </ul>
+                    <p data-en="Some women may also experience primary ovarian insufficiency, which can cause symptoms such as:" data-ar="قد تعاني بعض النساء أيضًا من فشل المبيض الأولي، والذي قد يسبب أعراضًا مثل:">
+                    Some women may also experience primary ovarian insufficiency, which can cause symptoms such as:</p>
+                    <ul class="modal-list">
+                        <li data-en="Hot flashes." data-ar="هبات ساخنة.">Hot flashes.</li>
+                        <li data-en="Irregular menstrual cycles." data-ar="دورات شهرية غير منتظمة.">Irregular menstrual cycles.</li>
+                        <li data-en="Vaginal dryness." data-ar="جفاف المهبل.">Vaginal dryness.</li>
+                    </ul>
+                    <p data-en="Diagnosis of Low Ovarian Reserve:" data-ar="تشخيص انخفاض مخزون المبيض:">
+                    Diagnosis of Low Ovarian Reserve:</p>
+                    <ul class="modal-list">
+                        <li data-en="Blood Test - A blood test is performed on the second or third day of the menstrual cycle." data-ar="اختبار الدم - يتم إجراء فحص الدم في اليوم الثاني أو الثالث من الدورة الشهرية.">Blood Test - A blood test is performed on the second or third day of the menstrual cycle.</li>
+                        <li data-en="Ultrasound Examination - A transvaginal ultrasound is used to assess the size of the ovaries and count the number of follicles in each ovary." data-ar="فحص الموجات فوق الصوتية - يتم استخدام الموجات فوق الصوتية عبر المهبل لتقييم حجم المبايض وحساب عدد الجريبات في كل مبيض.">Ultrasound Examination - A transvaginal ultrasound is used to assess the size of the ovaries and count the number of follicles in each ovary.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GOOGLE MAP -->
+<section id="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.818320343149!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458bf22a10bf0bf%3A0x7fbb64bd4aef137c!2z2YPZiNmK2YbYsiDYs9mG2KrYsSBRdWVlbnMgQ2VudGVy!5e0!3m2!1sen!2seg!4v1739269376881!5m2!1sen!2seg" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h5>
+                <p data-en="Dear Client, you can call us to schedule an appointment at the clinic at your convenience. Let us know if you need any assistance. Looking forward to speaking with you!" data-ar="عزيزي العميل، يمكنك الاتصال بنا لتحديد موعد في العيادة في الوقت المناسب لك. أخبرنا إذا كنت بحاجة إلى أي مساعدة. نتطلع للتحدث معك!">
+                Dear Client, you can call us to schedule an appointment at the clinic at your convenience. Let us know if you need any assistance. Looking forward to speaking with you!</p>
+                <div class="contact-info">
+                    <p> <i class="fa-solid fa-phone"></i> 01553664556 </p>
+                    <p> <i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100064726072181" target="_blank">Dr.Zahra Ragheb</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h5 data-en="News" data-ar="الأخبار">News</h5>
+                <div class="latest-stories d-flex">
+                    <div class="stories-image">
+                        <img src="Media/photo2 (2).jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="stories-info ms-3">
+                        <a href="#news"><h6 data-en="Symptoms of Low Ovarian Reserve" data-ar="أعراض انخفاض مخزون المبيض">Symptoms of Low Ovarian Reserve</h6></a>
+                    </div>
+                </div>
+                <div class="latest-stories d-flex">
+                    <div class="stories-image">
+                        <img src="Media/photo2 (1).jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="stories-info ms-3">
+                        <a href="#news"><h6 data-en="PRP Injections Are Not Just for Skin and Hair!" data-ar="حقن البلازما ليست فقط للبشرة والشعر!">PRP Injections Are Not Just for Skin and Hair!</h6></a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 opening-hours">
+                <h5 data-en="Opening Hours" data-ar="ساعات العمل">Opening Hours</h5>
+                <p><span data-en="Daily" data-ar="يوميًا">Daily</span> <span class="ms-3" data-en="02:00 PM - 05:00 PM" data-ar="02:00 م - 05:00 م">02:00 PM - 05:00 PM</span></p>
+                <p><span data-en="Saturday - Tuesday" data-ar="السبت - الثلاثاء">Saturday - Tuesday</span> <span class="ms-3" data-en="05:00 PM - 08:00 PM" data-ar="05:00 م - 08:00 م">05:00 PM - 08:00 PM</span></p>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row text-center reserved">
+            <p>
+                <span data-en="© 2025 Dr.Zahra Ragheb clinic | Design: " data-ar="© 2025 عيادة د.الزهراء اسماعيل راغب | التصميم: ">© 2025 Dr.Zahra Ragheb clinic | Design: </span>
+                <a class="emailme" href="mailto:hamseldakrory14@gmail.com" data-en="Hams Eldakrory" data-ar="همس الدكروري">Hams Eldakrory</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    new WOW().init();
+    document.getElementById("lang-switch").addEventListener("click", function () {
+        let htmlTag = document.documentElement;
+        let isEnglish = htmlTag.lang === "en";
+        
+        // switch lang and direction
+        htmlTag.lang = isEnglish ? "ar" : "en";
+        htmlTag.dir = isEnglish ? "rtl" : "ltr";
+        document.body.style.textAlign = isEnglish ? "right" : "left";
+        
+       // update text
+        document.querySelectorAll("[data-en]").forEach(el => {
+            el.innerText = isEnglish ? el.getAttribute("data-ar") : el.getAttribute("data-en");
+        });
+        
+       // switch lang button
+        this.innerText = isEnglish ? "English" : "العربية";
+    });
+</script>
+</body>
+</html>
