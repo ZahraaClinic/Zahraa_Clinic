@@ -143,15 +143,15 @@ html[lang="ar"] .words{
 }
 
 .item-first {
-  background-image: url(/public/banner1.jpg);
+  background-image: url(./public/banner1.jpg);
 }
 
 .item-second {
-  background-image: url(/public/banner3\ \(2\).jpg);
+  background-image: url(./public/banner3\ \(2\).jpg);
 }
 
 .item-third {
-  background-image: url(/public/banner5.jpg);
+  background-image: url(./public/banner5.jpg);
 }
 .banner-btn{
   background-color: var(--transGreen);
@@ -162,13 +162,13 @@ html[lang="ar"] .words{
 
 /*About Us*/
 #about {
-  background: url('/public/about-bg.jpg') no-repeat top center;
+  background: url('./public/about-bg.jpg') no-repeat top center;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;
 }
 html[lang="ar"] #about{
-  background: url('/public/about-bgM.jpg')  no-repeat top center;
+  background: url('./public/about-bgM.jpg')  no-repeat top center;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;
