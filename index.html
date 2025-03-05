@@ -32,8 +32,10 @@
     
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="clinic.html"><img src="public/logo-removebg-preview.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#top">
+                <img src="public/logo-removebg-preview (1).png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,7 +44,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#doctor-section" data-en="Doctor" data-ar="الطبيبة">Doctor</a></li>
                     <li class="nav-item"><a class="nav-link" href="#news" data-en="News" data-ar="الأخبار">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#google-map" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -293,13 +295,9 @@
         </div>
     </div>
     <!-- GOOGLE MAP -->
-<section id="google-map">
+<section id="contact-us">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.818320343149!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458bf22a10bf0bf%3A0x7fbb64bd4aef137c!2z2YPZiNmK2YbYsiDYs9mG2KrYsSBRdWVlbnMgQ2VudGVy!5e0!3m2!1sen!2seg!4v1739269376881!5m2!1sen!2seg" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<!-- FOOTER -->
-<footer class="py-5">
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-md-4">
                 <h5 data-en="Contact Info" data-ar="معلومات الاتصال">Contact Info</h5>
@@ -313,7 +311,6 @@
                     <p> <i class="fa-brands fa-facebook me-2"></i><a href="https://www.facebook.com/profile.php?id=100064726072181" target="_blank">Dr.Zahra Ragheb</a></p>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <h5 data-en="News" data-ar="الأخبار">News</h5>
                 <div class="latest-stories d-flex">
@@ -341,19 +338,22 @@
                 <p><span data-en="Saturday - Tuesday" data-ar="السبت - الثلاثاء">Saturday - Tuesday</span> <span class="ms-3" data-en="05:00 PM - 08:00 PM" data-ar="05:00 م - 08:00 م">05:00 PM - 08:00 PM</span></p>
             </div>
         </div>
-
-        <hr class="my-4">
-
-        <div class="row text-center reserved">
-            <p>
-                <span data-en="© 2025 Dr.Zahra Ragheb clinic" data-ar="© 2025 عيادة د.الزهراء اسماعيل راغب  ">© 2025 Dr.Zahra Ragheb clinic</span>
-               
-            </p>
-        </div>
     </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="py-4 text-center">
+    <p>
+        <span id="year-text">
+            © <span id="year"></span> <span id="clinic-name">Dr.Zahra Ragheb clinic</span>
+        </span>
+    </p>
 </footer>
 <script>
+
     new WOW().init();
+    // switch lang
     document.getElementById("lang-switch").addEventListener("click", function () {
         let htmlTag = document.documentElement;
         let isEnglish = htmlTag.lang === "en";
@@ -370,6 +370,41 @@
         
        // switch lang button
         this.innerText = isEnglish ? "English" : "العربية";
+    });
+    // update year
+    document.addEventListener("DOMContentLoaded", function () {
+        // Set the current year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Function to update text based on language
+        function updateFooterText() {
+            const lang = document.documentElement.lang;
+            const clinicName = document.getElementById("clinic-name");
+
+            if (lang === "ar") {
+                clinicName.textContent = "عيادة د.الزهراء اسماعيل راغب";
+            } else {
+                clinicName.textContent = "Dr.Zahra Ragheb clinic";
+            }
+        }
+        updateFooterText();
+        document.getElementById("lang-switch").addEventListener("click", function () {
+            setTimeout(updateFooterText, 100); // Small delay to allow language change
+        });
+    });
+    // make nav close after click link in mobile
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".nav-link");
+        let navbarToggler = document.querySelector(".navbar-toggler");
+        let navbarCollapse = document.querySelector("#navbarNav");
+
+        navLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (navbarCollapse.classList.contains("show")) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            });
+        });
     });
 </script>
 </body>

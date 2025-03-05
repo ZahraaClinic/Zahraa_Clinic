@@ -33,7 +33,9 @@ html[lang="ar"] body {
   background-color: var(--mainGreen);
   color: var(--mainWhite);
 }
-
+.wow {
+  animation-duration: 0.5s !important; 
+}
 /*Header*/
 header {
     border-bottom: 1px solid var(--mainWhite);
@@ -166,7 +168,7 @@ html[lang="ar"] .words{
 
 /*About Us*/
 #about {
-  background: url('../public/about-bg.jpg') no-repeat top center;
+  background: url('../public/about-bg\ \(1\).jpg') no-repeat top center;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -287,18 +289,12 @@ html[lang="ar"] .modal-list{
 html[lang="ar"] .btn-close{
   margin-right: 470px;
 }
-/*Footer*/
-footer {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-footer h5 {
+#contact-us h5 {
   padding-bottom: 5px;
   color: var(--darkGreen);
 }
 
-footer a {
+#contact-us a {
   text-decoration: none;
   color: var(--mainBlack);
   font-size: 15px;
@@ -307,7 +303,7 @@ footer a {
 .fa-brands{
   color: var(--mainPink);
 }
-footer a:hover {
+#contact-us a:hover {
   color:var(--mainGreen);
 }
 
@@ -341,7 +337,9 @@ html[lang="ar"] .stories-info{
 .reserved,.emailme{
   color: var(--mainGreen);
 }
-
+#year-text{
+  color:var(--darkGreen)
+}
 /* General Mobile Fixes */
 @media (max-width: 768px) {
   html[lang="ar"] body {
@@ -379,7 +377,7 @@ html[lang="ar"] .stories-info{
   }
 
   #about, html[lang="ar"] #about {
-    background: #f0f0f0 !important; /* Light gray background */
+    background: #f0f0f0 !important; 
     background-size: cover;
   }
 
@@ -398,7 +396,6 @@ html[lang="ar"] .stories-info{
       margin-right: 150px;
   }
 
-  /* Footer */
   html[lang="ar"] .stories-info {
       margin-top: 5px;
       padding-right: 5px;
@@ -413,14 +410,99 @@ html[lang="ar"] .stories-info{
     width: 100%;
     text-align: center;
     margin-left: 20px;
+    margin-bottom: 20px;
   }
   html[lang="ar"] #doctor-section ul {
-    list-style-type: disc !important; /* Ensures dots appear in Arabic */
-    padding-right: 30px; /* Proper alignment for RTL */
+    list-style-type: disc !important; 
+    padding-right: 30px; 
 }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
 
+  /* Header Adjustments */
+  html[lang="ar"] header .details {
+      padding-right: 250px;
+      text-align: right;
+  }
+
+  /* Navbar Adjustments */
+  .navbar {
+      padding: 15px;
+  }
+
+  .navbar-brand img {
+      width: 90px;
+      height: 45px;
+  }
+
+  html[lang="ar"] .navbar-nav {
+      padding-right: 200px;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 14px;
+  }
+
+  /* Home Section */
+  html[lang="ar"] .words {
+      padding-right: 80px;
+  }
+
+  .carousel-item {
+      height: 75vh;
+  }
+
+  /* Images & Layout Fixes */
+  .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+  }
+
+  /* About Us */
+  #about,
+  html[lang="ar"] #about {
+      padding: 80px 0;
+  }
+
+  /* Doctor Section */
+  html[lang="ar"] #doctor-section .row {
+      flex-direction: column;
+      text-align: right;
+  }
+
+  /* Contact Us */
+  .contact-form {
+      max-width: 550px;
+  }
+
+  /* Footer */
+  html[lang="ar"] .stories-info {
+      margin-top: 10px;
+      padding-right: 10px;
+  }
+
+  html[lang="ar"] .reserved,
+  html[lang="ar"] .emailme {
+      text-align: center;
+      display: block;
+  }
+
+  #lang-switch {
+      width: auto;
+      text-align: center;
+      margin: 10px auto;
+      padding: 5px 15px;
+  }
+
+  html[lang="ar"] #doctor-section ul {
+      list-style-type: disc !important;
+      padding-right: 20px;
+  }
+}
 
 
 
