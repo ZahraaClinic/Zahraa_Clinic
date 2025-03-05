@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 body{
     font-family: 'Poppins',sans-serif;
@@ -336,6 +337,79 @@ html[lang="ar"] .stories-info{
 }
 .reserved,.emailme{
   color: var(--mainGreen);
+}
+
+/* General Mobile Fixes */
+@media (max-width: 768px) {
+  html[lang="ar"] body {
+      text-align: right;
+  }
+
+  /* Header Adjustments */
+  html[lang="ar"] header {
+      flex-direction: column;
+      text-align: right;
+  }
+
+  html[lang="ar"] header .details {
+      padding-right: 20px;
+      text-align: right;
+  }
+
+  /* Navbar Adjustments */
+  html[lang="ar"] .navbar {
+      text-align: right;
+  }
+
+  html[lang="ar"] .navbar-nav {
+      padding-right: 20px;
+  }
+
+  html[lang="ar"] .navbar .nav-item .nav-link {
+      padding-right: 15px;
+      text-align: right;
+  }
+
+  /* Home Section */
+  html[lang="ar"] .words {
+      padding-right: 10px;
+  }
+
+  #about, html[lang="ar"] #about {
+    background: #f0f0f0 !important; /* Light gray background */
+    background-size: cover;
+  }
+
+  /* Doctor Section */
+  html[lang="ar"] #doctor-section .row {
+      flex-direction: column;
+      text-align: right;
+  }
+
+  /* News Section */
+  html[lang="ar"] .modal-list {
+      padding-right: 10px;
+  }
+
+  html[lang="ar"] .btn-close {
+      margin-right: 150px;
+  }
+
+  /* Footer */
+  html[lang="ar"] .stories-info {
+      margin-top: 5px;
+      padding-right: 5px;
+  }
+
+  html[lang="ar"] .reserved,
+  html[lang="ar"] .emailme {
+      text-align: center;
+      display: block;
+  }
+  #lang-switch {
+    width: 100%;
+    text-align: center;
+}
 }
 
 
