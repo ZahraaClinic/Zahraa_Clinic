@@ -71,7 +71,9 @@ html[lang="ar"] header span i {
     margin-right: 0;
     margin-left: 5px;
 }
-
+.title-header{
+  color:var(--darkGreen)
+}
 /*NavBar*/
 .navbar {
     border: none;
